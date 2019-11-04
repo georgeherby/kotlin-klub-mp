@@ -7,7 +7,7 @@ repositories {
 }
 
 group 'com.example'
-version '0.0.1'
+version '0.0.2'
 
 apply plugin: 'maven-publish'
 
@@ -27,8 +27,6 @@ kotlin {
                 implementation kotlin('stdlib-common')
                 implementation "io.ktor:ktor-client-core:$ktor_version"
                 implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.1.1'
-//                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
-
             }
         }
         commonTest {
@@ -40,7 +38,6 @@ kotlin {
         jvmMain {
             dependencies {
                 implementation kotlin('stdlib')
-                implementation "io.ktor:ktor-client-okhttp:$ktor_version"
                 implementation "io.ktor:ktor-client-android:$ktor_version"
             }
         }

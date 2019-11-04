@@ -1,6 +1,5 @@
 package sample
 
-import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.*
 
-internal actual val ApplicationDispatcher: CoroutineDispatcher
-    get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
+internal actual val ApplicationDispatcher: CoroutineDispatcher = Dispatchers.Default
